@@ -1,0 +1,5 @@
+node_modules/
+.env
+bots-storage/*
+!bots-storage/.gitkeep
+*.log

@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "python3", "pip"]
+
+[phases.install]
+cmds = [
+  "npm install",
+  "pip install --break-system-packages requests aiohttp PyYAML python-telegram-bot telethon pyrogram aiogram discord.py beautifulsoup4 lxml psutil python-dotenv PyJWT pymongo redis SQLAlchemy psycopg2-binary openpyxl pandas numpy matplotlib seaborn scikit-learn pillow opencv-python-headless pyttsx3 gTTS pydub qrcode apscheduler speedtest-cli wikipedia feedparser pynput cryptography bcrypt paramiko httpx websockets orjson ujson flask fastapi uvicorn"
+]
+
+[start]
+cmd = "node index.js"
